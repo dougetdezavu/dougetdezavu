@@ -8,9 +8,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=18&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=CREATIVE+MIND.;DIGITAL+EXPLORER.;ALWAYS+BUILDING+SOMETHING." />
 
 <br>
-
-<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="280" />
-
 <br>
 
 **「 NOT HERE TO FIT IN. 」**
