@@ -57,6 +57,9 @@
 
 
 <img src="https://streak-stats.demolab.com?user=dougetdezavu&hide_border=true&background=000000&ring=FFFFFF&fire=C0C0C0&currStreakLabel=FFFFFF&sideLabels=C0C0C0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888" width="100%" />
+<div align="center">
+  <img src="./file_00000000e1848211abd6a9ed79ae11ae.gif" width="100" />
+</div>
 
 ---
 
