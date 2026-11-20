@@ -1,4 +1,8 @@
+<div align="center">
 
+<img src="./file_00000000b6908211801a01690d971aaa.png" width="100%" />
+
+</div>
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=venom&height=280&text=DOUGETDEZAVU&fontSize=48&fontColor=FFFFFF&stroke=FFFFFF&strokeWidth=1&animation=fadeIn&color=0:000000,50:252525,100:000000" width="100%" />
