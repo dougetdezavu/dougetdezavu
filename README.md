@@ -70,7 +70,19 @@
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:333333,100:000000&height=130&section=footer" width="100%" />
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,50:303030,100:000000&height=2&section=footer" width="100%" />
+
+<br/>
+
+<h3>DOUGETDEZAVU</h3>
+
+<sub>BUILT DIFFERENT · ALWAYS EVOLVING</sub>
+
+<br/><br/>
+
+</div>
 
 **© 2026 — DOUGETDEZAVU**
 
