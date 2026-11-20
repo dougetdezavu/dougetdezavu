@@ -1,51 +1,74 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:090979,50:00D4FF,100:000000&height=200&section=header&text=DOUGETDEZAVU&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=500&lines=Welcome+to+my+profile;Creative+Mind+%7C+Developer;Building+my+own+digital+world" />
+<img src="https://capsule-render.vercel.app/api?type=venom&height=280&text=DOUGETDEZAVU&fontSize=48&fontColor=FFFFFF&stroke=FFFFFF&strokeWidth=1&animation=fadeIn&color=0:000000,50:252525,100:000000" width="100%" />
 
 <br>
 
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="350" />
+<img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=18&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=CREATIVE+MIND.;DIGITAL+EXPLORER.;ALWAYS+BUILDING+SOMETHING." />
+
+<br>
+
+<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="280" />
+
+<br>
+
+**「 NOT HERE TO FIT IN. 」**
+
+*Just building my own world.*
 
 </div>
 
 ---
 
-## 🖤 ABOUT ME
+<div align="center">
 
-```yaml
-Name: Dougetdezavu
-Nickname: Kenn
-Country: Indonesia
-Role: Beginner Developer
-Learning: HTML, CSS, JavaScript
-Status: Always Learning
+## 01 — ABOUT ME
+
+</div>
+
+```text
+╭────────────────────────────────────╮
+│                                    │
+│   NAME       : DOUGETDEZAVU        │
+│   NICKNAME   : KENN                │
+│   COUNTRY    : INDONESIA           │
+│   ROLE       : DEVELOPER           │
+│   INTEREST   : TECHNOLOGY & ART    │
+│   STATUS     : ALWAYS LEARNING     │
+│                                    │
+╰────────────────────────────────────╯
 ```
 
-## ⚡ TECH STACK
-
-<div align="center">
-<img src="https://skillicons.dev/icons?i=html,css,js,python,github,vscode" />
-</div>
-
-## 📊 GITHUB STATISTICS
-
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=dougetdezavu&show_icons=true&theme=tokyonight&hide_border=true" />
+## 02 — TECHNOLOGIES
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dougetdezavu&layout=compact&theme=tokyonight&hide_border=true" />
+<img src="https://skillicons.dev/icons?i=html,css,js,python,github,vscode&theme=dark" />
 
-</div>
+<br>
+
+## 03 — GITHUB STATISTICS
+
+<img src="https://github-readme-stats.vercel.app/api?username=dougetdezavu&show_icons=true&theme=transparent&title_color=FFFFFF&text_color=BBBBBB&icon_color=FFFFFF&border_color=555555" width="100%" />
+
+<br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dougetdezavu&layout=compact&theme=transparent&title_color=FFFFFF&text_color=BBBBBB&border_color=555555" />
+
+<br>
+
+<img src="https://streak-stats.demolab.com?user=dougetdezavu&theme=dark&hide_border=true&background=000000&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF&sideLabels=BBBBBB&dates=888888" width="100%" />
 
 ---
 
-<div align="center">
+### 𝙇𝙀𝙎𝙎 𝙉𝙊𝙄𝙎𝙀.
+### 𝙈𝙊𝙍𝙀 𝘾𝙍𝙀𝘼𝙏𝙄𝙊𝙉.
 
-### 「 CODE. CREATE. REPEAT. 」
+<br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:00D4FF,100:090979&height=120&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:333333,100:000000&height=130&section=footer" width="100%" />
+
+**© 2026 — DOUGETDEZAVU**
 
 </div>
