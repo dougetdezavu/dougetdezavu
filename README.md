@@ -5,10 +5,6 @@
 </div>
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=280&text=DOUGETDEZAVU&fontSize=48&fontColor=FFFFFF&stroke=FFFFFF&strokeWidth=1&animation=fadeIn&color=0:000000,50:252525,100:000000" width="100%" />
-
-<br>
-
 <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=18&duration=3000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=CREATIVE+MIND.;DIGITAL+EXPLORER.;ALWAYS+BUILDING+SOMETHING." />
 
 <br>
