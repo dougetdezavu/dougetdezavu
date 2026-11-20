@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOUGETDEZAVU — Kenn</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+document.documentElement.classList.add("js");
+</script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:25px}
+body{background:#090909;color:#eee;font-family:'Inter',sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:#ddd;color:#111}
+
+/* OPENING */
+
+.intro-page{
+  max-width:710px;
+  margin:0 auto;
+  padding:35px 15px 0;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:17px;
+  padding:0 5px;
+}
+
+.brand{font-size:11px;font-weight:800;letter-spacing:3px}
+.status{color:#999;font-family:'DM Mono',monospace;font-size:9px}
+
+.navigation{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:11px;
+  background:#171717;
+  border:1px solid #303030;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+
+.navigation a{
+  flex:1;
+  text-align:center;
+  padding:9px 3px;
+  color:#92928d;
+  font-size:10px;
+  border-radius:7px;
+  transition:background .3s,color .3s,transform .3s;
+}
+
+.navigation a:hover{
+  background:#303030;
+  color:white;
+  transform:translateY(-2px);
+}
+
+.profile{
+  background:#181818;
+  border:1px solid #303030;
+  border-radius:15px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  gap:17px;
+  margin-bottom:12px;
+  transition:border-color .4s,transform .4s;
+}
+
+.profile:hover{border-color:#666;transform:translateY(-2px)}
+
+.avatar{
+  width:75px;
+  height:75px;
+  flex-shrink:0;
+  border-radius:11px;
+  overflow:hidden;
+  border:1px solid #555;
+  background:#222;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:grayscale(100%);
+  transition:transform .7s,filter .7s;
+}
+
+.profile:hover .avatar img{
+  transform:scale(1.08);
+  filter:grayscale(35%);
+}
+
+.profile-info{flex:1}
+.profile-info h2{font-size:18px;letter-spacing:-.5px}
+.profile-info p{color:#898984;font-size:10px;margin-top:5px}
+.profile-tag{
+  display:inline-block;
+  margin-top:9px;
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  color:#bbb;
+  letter-spacing:1px;
+}
+.online{color:#a9c6a5;font-size:10px}
+
+.hero{
+  background:#181818;
+  border:1px solid #303030;
+  border-radius:15px;
+  padding:24px;
+  margin-bottom:12px;
+  position:relative;
+  overflow:hidden;
+}
+
+.kicker{
+  font-family:'DM Mono',monospace;
+  color:#858580;
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  font-size:clamp(32px,7vw,48px);
+  line-height:1.12;
+  letter-spacing:-2px;
+  margin-top:19px;
+  font-weight:700;
+}
+
+.hero h1 em{
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+  color:#aaa9a1;
+}
+
+.hero-description{
+  color:#999994;
+  font-size:12px;
+  line-height:1.9;
+  margin-top:14px;
+  max-width:440px;
+}
+
+.hero-image{
+  width:100%;
+  height:175px;
+  margin-top:22px;
+  border-radius:9px;
+  background:
+    linear-gradient(0deg,rgba(0,0,0,.35),transparent),
+    url("file_00000000b6908211801a01690d971aaa.png")
+    center/cover;
+  filter:grayscale(100%);
+  transform:scale(1);
+  animation:bannerBreath 12s ease-in-out infinite alternate;
+}
+
+.hero-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:17px;
+}
+
+.mono{color:#777;font-family:'DM Mono',monospace;font-size:9px}
+.actions{display:flex;gap:7px;flex-wrap:wrap}
+
+.btn{
+  display:inline-block;
+  background:#252525;
+  border:1px solid #393939;
+  color:#ddd;
+  border-radius:7px;
+  padding:9px 12px;
+  font-size:10px;
+  cursor:pointer;
+  transition:background .3s,color .3s,transform .3s,border-color .3s;
+}
+
+.btn:hover{
+  background:#eee;
+  color:#111;
+  border-color:#eee;
+  transform:translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+section{padding:110px 7%}
+.section-label{font-size:10px;color:#777;letter-spacing:4px;margin-bottom:25px}
+.section-title{
+  font-size:clamp(35px,5vw,65px);
+  font-weight:500;
+  letter-spacing:-3px;
+  line-height:1.1;
+}
+
+/* ABOUT */
+
+.about{
+  background:#111;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.about-left p{
+  color:#999;
+  font-size:13px;
+  line-height:2.2;
+  max-width:450px;
+  margin-top:30px;
+}
+
+.about-right{border-left:1px solid #333;padding-left:40px}
+
+.info{
+  display:flex;
+  justify-content:space-between;
+  padding:18px 0;
+  border-bottom:1px solid #292929;
+  font-size:11px;
+  gap:15px;
+  transition:padding-left .3s,color .3s;
+}
+
+.info:hover{padding-left:9px}
+.info span:first-child{color:#777;letter-spacing:2px}
+.info span:last-child{color:#ddd;text-align:right}
+
+/* SOCIAL */
+
+.social{background:#111}
+
+.social-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  margin-top:45px;
+  perspective:1000px;
+}
+
+.social-card{
+  padding:30px;
+  border:1px solid #292929;
+  background:rgba(255,255,255,.005);
+  transition:background .4s,border-color .4s,transform .4s,box-shadow .4s;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+
+.social-card:hover{
+  background:#222;
+  border-color:#777;
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.social-card small{color:#777;font-size:9px;letter-spacing:3px}
+.social-card h3{margin-top:20px;font-size:16px;font-weight:400}
+.social-card p{margin-top:10px;color:#777;font-size:10px}
+
+/* SPOTIFY COLLECTION */
+
+.music{background:#090909}
+
+.music-description{
+  color:#888;
+  font-size:12px;
+  line-height:1.9;
+  margin-top:18px;
+  max-width:450px;
+}
+
+.playlist-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-top:35px;
+  perspective:1000px;
+}
+
+.playlist-btn{
+  background:#151515;
+  border:1px solid #303030;
+  color:#eee;
+  text-align:left;
+  padding:22px;
+  cursor:pointer;
+  transition:background .3s,border-color .3s,transform .3s,box-shadow .3s;
+  border-radius:9px;
+  font-family:inherit;
+  transform-style:preserve-3d;
+}
+
+.playlist-btn:hover,
+.playlist-btn.active{
+  background:#242424;
+  border-color:#888;
+}
+
+.playlist-btn:hover{
+  box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.playlist-btn small{
+  display:block;
+  color:#777;
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:2px;
+  margin-bottom:12px;
+}
+
+.playlist-btn strong{font-size:13px;font-weight:500}
+
+.spotify-player{
+  margin-top:20px;
+  border:1px solid #303030;
+  background:#141414;
+  padding:20px;
+  border-radius:12px;
+  transition:border-color .4s,transform .4s;
+}
+
+.spotify-player:hover{border-color:#555}
+
+.spotify-heading{
+  display:flex;
+  justify-content:space-between;
+  color:#777;
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+
+.spotify-player iframe{
+  display:block;
+  width:100%;
+  border:0;
+  border-radius:9px;
+}
+
+.spotify-open{
+  display:inline-block;
+  margin-top:17px;
+  font-family:'DM Mono',monospace;
+  font-size:9px;
+  letter-spacing:2px;
+  color:#aaa;
+  transition:color .3s,transform .3s;
+}
+
+.spotify-open:hover{color:white;transform:translateX(4px)}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid #222;
+  padding:40px 7%;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  color:#666;
+  font-size:9px;
+  letter-spacing:2px;
+}
+
+footer strong{color:#ddd}
+
+/* OPENING ANIMATION */
+
+@keyframes enterUp{
+  from{opacity:0;transform:translateY(28px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes bannerBreath{
+  from{background-position:center center;background-size:100%}
+  to{background-position:center center;background-size:110%}
+}
+
+.js .topbar,
+.js .navigation,
+.js .profile,
+.js .hero{
+  opacity:0;
+  animation:enterUp .85s cubic-bezier(.2,.7,.2,1) forwards;
+}
+
+.js .topbar{animation-delay:.1s}
+.js .navigation{animation-delay:.25s}
+.js .profile{animation-delay:.4s}
+.js .hero{animation-delay:.55s}
+
+/* SCROLL REVEAL */
+
+.js .scroll-reveal{
+  opacity:0;
+  transform:translateY(45px);
+  transition:opacity .9s cubic-bezier(.2,.7,.2,1),
+             transform .9s cubic-bezier(.2,.7,.2,1);
+}
+
+.js .scroll-reveal.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.js .reveal-child{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);
+}
+
+.js .visible .reveal-child{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.js .visible .reveal-child:nth-child(1){transition-delay:.08s}
+.js .visible .reveal-child:nth-child(2){transition-delay:.16s}
+.js .visible .reveal-child:nth-child(3){transition-delay:.24s}
+.js .visible .reveal-child:nth-child(4){transition-delay:.32s}
+.js .visible .reveal-child:nth-child(5){transition-delay:.40s}
+.js .visible .reveal-child:nth-child(6){transition-delay:.48s}
+
+/* FOOTER REVEAL */
+
+.js footer{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+.js footer.visible{opacity:1;transform:translateY(0)}
+
+/* MOBILE */
+
+@media(max-width:768px){
+  .intro-page{padding:20px 11px 0}
+  .profile{padding:15px}
+  .hero{padding:19px}
+  .hero-image{height:145px}
+  .navigation a{font-size:9px}
+  .about{grid-template-columns:1fr;gap:45px}
+  .about-right{padding-left:20px}
+  section{padding:85px 6%}
+  .social-grid{grid-template-columns:1fr}
+  .playlist-grid{grid-template-columns:1fr}
+  .spotify-player{padding:12px}
+  footer{padding:35px 6%}
+}
+
+@media(max-width:420px){
+  .profile-info h2{font-size:16px}
+  .online{font-size:9px}
+  .hero h1{letter-spacing:-1.5px}
+  .hero-bottom{align-items:flex-start}
+  .navigation{gap:3px;padding:7px}
+  .navigation a{font-size:8px}
+}
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+  .js .scroll-reveal,
+  .js .reveal-child,
+  .js footer{
+    opacity:1;
+    transform:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="intro-page">
+
+<header class="topbar">
+  <div class="brand">DOUGETDEZAVU.</div>
+  <div class="status">● AVAILABLE / 2026</div>
+</header>
+
+<nav class="navigation">
+  <a href="#home">⌂ HOME</a>
+  <a href="#about">◎ ABOUT</a>
+  <a href="#social">◎ SOCIAL</a>
+  <a href="#music">♫ MUSIC</a>
+  <a href="#social">✳ EXTRAS</a>
+</nav>
+
+<div class="profile">
+  <div class="avatar">
+    <img src="./32fea8d7-e75a-4dac-adeb-dce7f45568b3.jpg" alt="Kenn">
+  </div>
+
+  <div class="profile-info">
+    <h2>Kenn</h2>
+    <p>dougetdezavu • personal digital identity</p>
+    <div class="profile-tag">✦ INDEPENDENT MIND</div>
+  </div>
+
+  <div class="online">● online</div>
+</div>
+
+<main id="home" class="hero">
+  <div class="kicker">PERSONAL SPACE / 001</div>
+
+  <h1>hi, i'm <em>Kenn.</em> ⟡</h1>
+
+  <p class="hero-description">
+    Not here to fit in. Just building my own world.
+    A personal space where creativity, technology,
+    music, and art exist beyond ordinary boundaries.
+  </p>
+
+  <div class="hero-image"></div>
+
+  <div class="hero-bottom">
+    <span class="mono">INDONESIA • EST. 2026</span>
+    <div class="actions">
+      <a href="#social" class="btn">↗ connect</a>
+      <a href="#about" class="btn">explore more ↗</a>
+    </div>
+  </div>
+</main>
+
+</div>
+
+<!-- ABOUT -->
+
+<section class="about scroll-reveal" id="about">
+  <div class="about-left">
+    <div class="section-label">01 — INTRODUCTION</div>
+    <h2 class="section-title">Beyond the<br>ordinary.</h2>
+    <p>
+      I'm someone who enjoys exploring the intersection
+      of technology and creativity. Always learning,
+      always experimenting, and constantly building
+      something new.
+      <br><br>
+      This is not just a portfolio.
+      This is a little reflection of my own world.
+    </p>
+  </div>
+
+  <div class="about-right">
+    <div class="info reveal-child"><span>NAME</span><span>KENN / DOUGETDEZAVU</span></div>
+    <div class="info reveal-child"><span>LOCATION</span><span>INDONESIA</span></div>
+    <div class="info reveal-child"><span>FIELD</span><span>DEVELOPMENT</span></div>
+    <div class="info reveal-child"><span>INTEREST</span><span>TECHNOLOGY & ART</span></div>
+    <div class="info reveal-child"><span>STATUS</span><span>ALWAYS LEARNING</span></div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+
+<section class="social scroll-reveal" id="social">
+  <div class="section-label">02 — CLICK ME MORE GUYS</div>
+  <h2 class="section-title">Click me more,<br>guys.</h2>
+
+  <div class="social-grid">
+    <a href="https://www.instagram.com/r4biiii.a" target="_blank" rel="noopener noreferrer" class="social-card reveal-child">
+      <small>01 / SOCIAL</small>
+      <h3>Instagram ↗</h3>
+      <p>@r4biiii.a</p>
+    </a>
+
+    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-card reveal-child">
+      <small>02 / DEVELOPMENT</small>
+      <h3>GitHub ↗</h3>
+      <p>Where ideas become reality.</p>
+    </a>
+
+    <a href="https://discord.com/users/904091586688864319" target="_blank" rel="noopener noreferrer" class="social-card reveal-child">
+      <small>03 / COMMUNITY</small>
+      <h3>Discord ↗</h3>
+      <p>Connect with Kenn.</p>
+    </a>
+
+    <a href="https://open.spotify.com/user/313xkm6srmm34jfi3mmx3aj6ckgq" target="_blank" rel="noopener noreferrer" class="social-card reveal-child">
+      <small>04 / SOUND</small>
+      <h3>Spotify ↗</h3>
+      <p>My music profile.</p>
+    </a>
+
+    <a href="https://www.tiktok.com/@dougetdezavu" target="_blank" rel="noopener noreferrer" class="social-card reveal-child">
+      <small>05 / VIDEO</small>
+      <h3>TikTok ↗</h3>
+      <p>@dougetdezavu</p>
+    </a>
+  </div>
+</section>
+
+<!-- SPOTIFY COLLECTION -->
+
+<section class="music scroll-reveal" id="music">
+  <div class="section-label">03 — MUSIC COLLECTION</div>
+  <h2 class="section-title">My music,<br>my own world.</h2>
+
+  <p class="music-description">
+    A little collection of sounds that define my moments.
+    Choose a playlist and enjoy the music.
+  </p>
+
+  <div class="playlist-grid">
+
+    <button class="playlist-btn active reveal-child"
+      onclick="changePlaylist('4KSf2rurSxt5YQI7COTfqY',this)">
+      <small>PLAYLIST 01</small>
+      <strong>Playlist One ↗</strong>
+    </button>
+
+    <button class="playlist-btn reveal-child"
+      onclick="changePlaylist('2TA2qT9p2e91lGZEozyGlI',this)">
+      <small>PLAYLIST 02</small>
+      <strong>Playlist Two ↗</strong>
+    </button>
+
+    <button class="playlist-btn reveal-child"
+      onclick="changePlaylist('1nbxkKUySayYYm4w2SedcC',this)">
+      <small>PLAYLIST 03</small>
+      <strong>Playlist Three ↗</strong>
+    </button>
+
+    <button class="playlist-btn reveal-child"
+      onclick="changePlaylist('0SZ7kPRBZwPb5XxtvUupfS',this)">
+      <small>PLAYLIST 04</small>
+      <strong>Playlist Four ↗</strong>
+    </button>
+
+  </div>
+
+  <div class="spotify-player reveal-child">
+    <div class="spotify-heading">
+      <span>NOW PLAYING</span>
+      <span>SPOTIFY EMBED</span>
+    </div>
+
+    <iframe
+      id="spotifyFrame"
+      src="https://open.spotify.com/embed/playlist/4KSf2rurSxt5YQI7COTfqY?utm_source=generator&theme=0"
+      height="380"
+      allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+
+    <a
+      href="https://open.spotify.com/playlist/4KSf2rurSxt5YQI7COTfqY"
+      id="spotifyOpen"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="spotify-open">
+      OPEN IN SPOTIFY ↗
+    </a>
+  </div>
+</section>
+
+<footer>
+  <strong>DOUGETDEZAVU.</strong>
+  <span>LESS NOISE. MORE CREATION.</span>
+  <span>© 2026 — ALL RIGHTS RESERVED</span>
+</footer>
+
+<script>
+/* SPOTIFY PLAYLIST SWITCHER */
+
+function changePlaylist(id,button){
+  document.getElementById("spotifyFrame").src =
+    "https://open.spotify.com/embed/playlist/" +
+    id + "?utm_source=generator&theme=0";
+
+  document.getElementById("spotifyOpen").href =
+    "https://open.spotify.com/playlist/" + id;
+
+  document.querySelectorAll(".playlist-btn").forEach(btn=>{
+    btn.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}
+
+/* SCROLL REVEAL */
+
+const revealElements = document.querySelectorAll(".scroll-reveal");
+const footer = document.querySelector("footer");
+
+if("IntersectionObserver" in window){
+
+  const revealObserver = new IntersectionObserver((entries,observer)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },{
+    threshold:0.12,
+    rootMargin:"0px 0px -45px 0px"
+  });
+
+  revealElements.forEach(element=>{
+    revealObserver.observe(element);
+  });
+
+  const footerObserver = new IntersectionObserver((entries,observer)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        footer.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.1});
+
+  footerObserver.observe(footer);
+
+}else{
+  revealElements.forEach(element=>element.classList.add("visible"));
+  footer.classList.add("visible");
+}
+
+/* SUBTLE 3D HOVER ON DESKTOP */
+
+const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+if(canHover){
+  document.querySelectorAll(".social-card,.playlist-btn").forEach(card=>{
+
+    card.addEventListener("mousemove",event=>{
+      const rect=card.getBoundingClientRect();
+      const x=event.clientX-rect.left;
+      const y=event.clientY-rect.top;
+
+      const rotateY=((x/rect.width)-0.5)*8;
+      const rotateX=((0.5-y/rect.height)*8);
+
+      card.style.transform=
+        `perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+
+    card.addEventListener("mouseleave",()=>{
+      card.style.transform=
+        "perspective(700px) rotateX(0) rotateY(0) translateY(0)";
+    });
+
+  });
+}
+</script>
+
+</body>
+</html>
