@@ -41,7 +41,11 @@
 
 ## 02 — TECHNOLOGIES
 
+<div align="center">
+
 <img src="https://skillicons.dev/icons?i=html,css,js,python,github,vscode&theme=dark" />
+
+</div>
 
 <br>
 
