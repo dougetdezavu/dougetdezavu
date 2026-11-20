@@ -24,18 +24,18 @@
 
 </div>
 
+
 ```text
-╭────────────────────────────────────╮
-│                                    │
-│   NAME       : DOUGETDEZAVU        │
-│   NICKNAME   : KENN                │
-│   COUNTRY    : INDONESIA           │
-│   ROLE       : DEVELOPER           │
-│   INTEREST   : TECHNOLOGY & ART    │
-│   STATUS     : ALWAYS LEARNING     │
-│                                    │
-╰────────────────────────────────────╯
+┌── IDENTITY ──────────────────┐
+│ NAME     : DOUGETDEZAVU      │
+│ ALIAS    : KENN              │
+│ BASE     : INDONESIA         │
+│ ROLE     : DEVELOPER         │
+│ INTEREST : TECH & 3D ART     │
+│ STATUS   : ALWAYS LEARNING   │
+└─────────────────────────────┘
 ```
+
 
 <div align="center">
 
