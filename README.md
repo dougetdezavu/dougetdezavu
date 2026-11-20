@@ -47,15 +47,16 @@
 
 ## 03 — GITHUB STATISTICS
 
-<img src="https://github-readme-stats.vercel.app/api?username=dougetdezavu&show_icons=true&theme=transparent&title_color=FFFFFF&text_color=BBBBBB&icon_color=FFFFFF&border_color=555555" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=dougetdezavu&show_icons=true&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=C0C0C0&icon_color=FFFFFF&border_radius=12" width="100%" />
 
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dougetdezavu&layout=compact&theme=transparent&title_color=FFFFFF&text_color=BBBBBB&border_color=555555" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dougetdezavu&layout=compact&hide_border=true&bg_color=000000&title_color=FFFFFF&text_color=C0C0C0" width="100%" />
 
 <br>
 
-<img src="https://streak-stats.demolab.com?user=dougetdezavu&theme=dark&hide_border=true&background=000000&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF&sideLabels=BBBBBB&dates=888888" width="100%" />
+
+<img src="https://streak-stats.demolab.com?user=dougetdezavu&hide_border=true&background=000000&ring=FFFFFF&fire=C0C0C0&currStreakLabel=FFFFFF&sideLabels=C0C0C0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888" width="100%" />
 
 ---
 
